@@ -48,6 +48,6 @@ function lookDefinition(vocabulary) {
   }
 }
 
-// look up by command line ipouts
+// look up by command line inputs
 const vocabularies = process.argv.slice(2);
 vocabularies.forEach(lookDefinition);
