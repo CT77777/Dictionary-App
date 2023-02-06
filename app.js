@@ -41,10 +41,10 @@ function lookDefinition(vocabulary) {
 
     //check address if exist
     request.on("error", (error) => {
-      console.log(error.meesage);
+      console.log(error.message + "\nThe address doesn't exist.");
     });
   } catch (error) {
-    console.error(error.message);
+    console.error(error.message + "\nThe protocol is invalid.");
   }
 }
 
